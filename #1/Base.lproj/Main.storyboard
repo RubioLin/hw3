@@ -1,24 +1,329 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19115.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B8v-0q-T09">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.5"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="WZM-hp-Sg9">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="B8v-0q-T09" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Q3H-Ja-6vo"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cQc-1j-zY7">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="pxz-ig-UAu" kind="relationship" relationship="viewControllers" id="p1x-tW-fRg"/>
+                        <segue destination="FpD-TO-eK0" kind="relationship" relationship="viewControllers" id="qwC-Xb-xGs"/>
+                        <segue destination="DDV-Sf-fqr" kind="relationship" relationship="viewControllers" id="H7w-2h-RVV"/>
+                        <segue destination="WmB-47-GRY" kind="relationship" relationship="viewControllers" id="qtE-xt-khB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJv-so-f2C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1009" y="-1100"/>
+        </scene>
+        <!--封面-->
+        <scene sceneID="cr0-MA-8YP">
+            <objects>
+                <navigationController id="pxz-ig-UAu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="封面" id="F7k-ae-HTV">
+                        <imageReference key="image" image="star.fill" catalog="system"/>
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WXy-T0-ALh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AMr-Io-AQk" kind="relationship" relationship="rootViewController" id="DOO-c0-yF0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hyh-cN-3SI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="-2066"/>
+        </scene>
+        <!--着飾る恋には理由があ-->
+        <scene sceneID="Uln-Yf-goA">
+            <objects>
+                <viewController id="AMr-Io-AQk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lBf-6L-mrc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bwg-jW-tSe">
+                                <rect key="frame" x="20" y="285" width="374" height="326"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="封面"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="US4-rW-Dgg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="着飾る恋には理由があ" id="8gi-0i-KVY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugL-NZ-Kke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="-2067"/>
+        </scene>
+        <!--故事-->
+        <scene sceneID="zul-lX-q5P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FpD-TO-eK0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="故事" id="hdi-LU-cf3">
+                        <imageReference key="image" image="star.fill" catalog="system"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zcE-DW-GVA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="srb-db-PSA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ouY-eG-8FR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="-1416"/>
+        </scene>
+        <!--故事介紹-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ro9-du-HK9">
+                                <rect key="frame" x="48" y="422" width="324" height="377"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">主角真柴是人氣品牌「el Arco Iris」的宣傳公關，同時她也是粉絲數將近10萬的網紅。她每一天都努力的經營自己的外在與生活表面，維持大家眼中「憧憬的存在」的形象。然而事業繁忙的她卻忘記向房東更新租約而被趕出家門，在好友的幫忙下來到位於表參道的一間合租公寓。在那裡她遇上了崇尚極簡主義又我行我素的餐車老闆藤野駿，價值觀完全相反的人擦出了意想不到的火花。
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lv1-g8-FPP">
+                                <rect key="frame" x="20" y="88" width="374" height="326"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="劇照2"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="故事介紹" id="Ij9-cr-jNg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="942.02898550724649" y="-1416.2946428571429"/>
+        </scene>
+        <!--角色-->
+        <scene sceneID="HDK-LR-i3V">
+            <objects>
+                <navigationController id="DDV-Sf-fqr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="角色" id="MmV-43-OQV">
+                        <imageReference key="image" image="star.fill" catalog="system"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q7h-9l-MrP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IOk-uf-OFX" kind="relationship" relationship="rootViewController" id="UO7-cn-fJ7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Vx-dg-C1m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="-782"/>
+        </scene>
+        <!--角色介紹-->
+        <scene sceneID="M2D-4w-NQ3">
+            <objects>
+                <viewController title="角色介紹" id="IOk-uf-OFX" customClass="characterView" customModule="_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xB2-9k-S8P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJV-UL-8KJ">
+                                <rect key="frame" x="174" y="547" width="67" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="藤野駿"/>
+                                <connections>
+                                    <segue destination="6GC-h1-Fxz" kind="show" id="462-N5-gck"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxL-kG-jpI">
+                                <rect key="frame" x="151" y="327" width="112" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="真柴久留美"/>
+                                <connections>
+                                    <segue destination="GQR-XA-HfS" kind="show" id="SEY-Jd-e5f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Uz-Tk-Obq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="角色介紹" id="mhf-Z0-nU0"/>
+                    <connections>
+                        <outlet property="真柴久留美" destination="yxL-kG-jpI" id="RXF-ey-pb1"/>
+                        <outlet property="藤野駿" destination="fJV-UL-8KJ" id="us6-yE-msV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oHF-JI-FXF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940.57971014492762" y="-782.14285714285711"/>
+        </scene>
+        <!--真柴久留美-->
+        <scene sceneID="eJJ-sT-OfQ">
+            <objects>
+                <viewController title="真柴久留美" id="GQR-XA-HfS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n3e-E1-hE5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XZ4-at-J0y">
+                                <rect key="frame" x="20" y="88" width="374" height="485"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="真柴久留美"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1up-BH-UWm">
+                                <rect key="frame" x="20" y="581" width="374" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">從設計學校畢業後，進入憧憬的「el Arco Iris」工作。負責廣告宣傳的她，為了幫助公司宣傳開始經營SNS，五年以來每天都會更新三篇貼文從不間斷，是擁有10萬粉絲的超級網紅。同時她暗戀著公司社長長達7年之久，為了公司及粉絲甚至社長，她每天都努力維持著自己的形象，就是想成為大家眼中「憧憬的存在」。
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ah0-kk-OaP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="真柴久留美" largeTitleDisplayMode="always" id="heE-Ck-hdg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCe-zL-Qiv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1578" y="-782"/>
+        </scene>
+        <!--藤野駿-->
+        <scene sceneID="jPG-2H-WtG">
+            <objects>
+                <viewController title="藤野駿" id="6GC-h1-Fxz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zSv-6r-FIj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cjd-x8-YGZ">
+                                <rect key="frame" x="20" y="88" width="374" height="485"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="藤野駿"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETW-eI-xiX">
+                                <rect key="frame" x="20" y="581" width="374" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">經營著餐車「Fuji Bal」，不過他是個非常隨心所欲的店長，只在自己高興的時間營業，有時候下雨天甚至直接不營業。假日和晚上也絕對不工作，過著把工作、休息分得很徹底的生活。對許多事都有自己的堅持，也很愛惜自己的東西，是個追求簡單生活的極簡主義者。
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r0O-HR-sBz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="藤野駿" largeTitleDisplayMode="always" id="LWz-I2-89Z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P4t-ci-099" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2212" y="-782"/>
+        </scene>
+        <!--劇照-->
+        <scene sceneID="UKg-UL-YUC">
+            <objects>
+                <navigationController id="WmB-47-GRY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="劇照" id="nyH-Mq-5Zu">
+                        <imageReference key="image" image="star.fill" catalog="system"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gYi-r5-3CD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mXU-VG-pDL" kind="relationship" relationship="rootViewController" id="1pZ-yh-Vyu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9V-SV-Bpg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="-151"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iHJ-9E-4Ap">
+            <objects>
+                <viewController id="mXU-VG-pDL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OY6-LC-bfk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tjY-1r-KuC">
+                                <rect key="frame" x="-5" y="265" width="424" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="劇照4"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acm-7y-bv0">
+                                <rect key="frame" x="20" y="544" width="374" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="劇照3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kRT-Yy-CE9">
+                                <rect key="frame" x="2" y="44" width="411" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="劇照1"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n0w-oY-JV2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SMH-9m-EDA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cE5-6S-pAX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942.02898550724649" y="-151.33928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="劇照1" width="2048" height="1363"/>
+        <image name="劇照2" width="1568" height="1046"/>
+        <image name="劇照3" width="1478" height="1108"/>
+        <image name="劇照4" width="1478" height="1108"/>
+        <image name="封面" width="399" height="399"/>
+        <image name="真柴久留美" width="598" height="778"/>
+        <image name="藤野駿" width="598" height="778"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
