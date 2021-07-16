@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19115.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T6j-DF-Sqy">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.5"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="vhi-i1-2oR">
+            <objects>
+                <viewController id="T6j-DF-Sqy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t0W-ZS-ABr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JwI-TO-jP5">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9T4-oV-m1K">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <imageReference key="image" image="launch"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="Color1"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F1c-PR-cJw"/>
+                        <color key="backgroundColor" name="Color1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="d4Q-xJ-SH5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YcH-yf-pQg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286" y="352"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch" width="1400" height="706"/>
+        <namedColor name="Color1">
+            <color red="0.9570000171661377" green="0.77999997138977051" blue="0.78799998760223389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
